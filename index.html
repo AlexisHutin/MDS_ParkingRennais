@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PARKING</title>
+  </head>
+  <style>
+    img{
+      width: 100px;
+    }
+    body{
+      text-align: center;
+      background-color: #dfd5d5;
+    }
+
+
+    #parkings{
+      display: flex;
+  		flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
+    .parking{
+  		height: 75%;
+      width: 49.2%;
+      text-align: center;
+      margin: 2px;
+      max-width: 500px;
+  	}
+    button{
+      border: none;
+      color: white;
+      background-color: blue;
+      height: 30px;
+      width: 100px;
+      border-radius: 10px;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+  </style>
+  <body>
+    <h1>PARKINGS RENNAIS</h1>
+      <div id="parkings"></div>
+
+
+    <button onclick="getData()">REFRESH</button>
+    <a href="map.html" target="_blank"><img src="icon_map.png"></a>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="parking.js"></script>
+  </body>
+</html>
